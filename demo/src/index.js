@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Helmet } from 'react-helmet'
 import styled, { createGlobalStyle } from 'styled-components';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -25,7 +26,9 @@ class Demo extends Component {
     return (
       <Router>
         <GlobalStyle />
-
+        <Helmet>
+          <title>Email Template Builder - RuzMail</title>
+        </Helmet>
         <Switch>
           <Route path={`/`} exact={true}>
             <Example />
