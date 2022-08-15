@@ -79,7 +79,7 @@ const Example = (props) => {
   return (
     <Container>
       <Bar>
-        <h1>React Email Editor (Demo)</h1>
+        <h1>Email Template Builder - Ruzmail</h1>
 
         <button onClick={saveDesign}>Save Design</button>
         <button onClick={exportHtml}>Export HTML</button>
